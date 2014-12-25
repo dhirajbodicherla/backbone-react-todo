@@ -1,4 +1,3 @@
-backbone-react-todo
-===================
+# Todo application in Backbone React
 
 Todo application with backbone and react

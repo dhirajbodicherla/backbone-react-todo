@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script src="//jashkenas.github.io/underscore/underscore-min.js"></script>
+    <script src="//jashkenas.github.io/backbone/backbone-min.js"></script>
+    <script src="http://fb.me/react-0.12.2.js"></script>
+    <script src="http://fb.me/JSXTransformer-0.12.2.js"></script>
+    <meta charset="utf-8">
+    <title>Todo Application</title>
+    <style type="text/css">
+    .body{
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+    .item{
+      width: 400px;
+      height: 300px;
+      position: relative;
+      border: 1px solid rgba(166, 102, 73, 1);
+      margin: 10px auto;
+    }
+    .title{
+      background: rgba(166, 102, 73, 0.61);
+      color: #ffffff;
+      width: 100%;
+      height: 40px;
+      font-size: 18px;
+      line-height: 40px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    ul{
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    li{
+      width: 100%;
+      height: 30px;
+      border-bottom: 1px dotted gray;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="body">
+      <div class="backbone-todo item">
+        <div class="title">Backbone Todo</div>
+        <div id="b"></div>
+      </div>
+      <div class="backbone-react-todo item">
+        <div class="title">Backbone-React Todo</div>
+        <div id="r"></div>
+      </div>
+    </div>
+    <script type="text/jsx" src="application.js"></script>
+  </body>
+</html>
